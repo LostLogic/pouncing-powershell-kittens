@@ -12,6 +12,10 @@
   Program: powershell.exe
   Arguments: -WindowStyle Hidden -ExecutionPolicy Bypass -File "PATH TO FILE\Set-SpotlightImageAsWallpaper.ps1"
   
+  This will cause a flicker of a console app to launch. To work around that issue, use the RunPowershellScriptHidden.vbs in the repo and configure the paths. That again can be run as a scheduled task with the following command:
+  Program: wscript.exe
+  Arguments: "PATH TO FILE\RunPowershellScriptHidden.vbs"
+  
   Set it to run as your user account when you are logged on with the highest priveleges checked. For optimal use, set it to recur every X minutes as you see fit.
 #>
 
